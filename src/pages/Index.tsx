@@ -15,8 +15,8 @@ import { TrendingUp, Clock, Award, BookOpen } from "lucide-react";
 import { HeaderAd, InContentAd, SidebarAd, FooterAd } from "@/components/ads/AdUnit";
 import { CookieConsent } from "@/components/privacy/CookieConsent";
 import { TestimonialSection } from "@/components/testimonials/TestimonialSection";
-import { DealOfTheDay } from "@/components/urgency/UrgencyElements";
 import { BuyingGuideCard } from "@/components/guides/BuyingGuideCard";
+import { DealOfTheDay } from "@/components/urgency/UrgencyElements";
 import { buyingGuides } from "@/data/buyingGuides";
 
 const Index = () => {
