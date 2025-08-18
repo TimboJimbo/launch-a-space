@@ -13,7 +13,7 @@ export interface Product {
 }
 
 export const sampleProducts: Product[] = [
-  // TECH GADGETS - Featured Products
+  // EXISTING FEATURED PRODUCTS
   {
     id: "1",
     title: "Apple AirPods Pro (2nd Generation) with Wireless Charging Case",
@@ -53,197 +53,147 @@ export const sampleProducts: Product[] = [
     category: "tech-gadgets",
     isFeatured: true
   },
+
+  // NEW ELECTRONICS PRODUCTS
   {
     id: "4",
-    title: "Amazon Echo Dot (5th Gen) Smart Speaker with Alexa",
-    image: "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=400&h=400&fit=crop&crop=center",
-    price: "$27.99",
+    title: "POWRUI Surge Protector with 12 Outlets and 4 USB Ports",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center",
+    price: "$29.99",
     originalPrice: "$49.99",
-    rating: 4.7,
-    reviews: 789234,
-    deal: "POPULAR: 44% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B09B8V1LZ3?tag=signupcodes-20",
+    rating: 4.5,
+    reviews: 87234,
+    deal: "POWER DEAL: 40% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B0814DFQXW?tag=signupcodes-20",
     category: "tech-gadgets"
   },
   {
     id: "5",
-    title: "Apple iPhone 15 USB-C to USB-C Cable (1 meter)",
-    image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=400&fit=crop&crop=center",
-    price: "$19.00",
-    originalPrice: "$29.00",
-    rating: 4.5,
-    reviews: 67823,
-    deal: "SAVE: 34% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B0BDHB9Y8W?tag=signupcodes-20",
+    title: "Hanycony Surge Protector Tower 14 Outlets Power Strip",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center",
+    price: "$34.99",
+    originalPrice: "$59.99",
+    rating: 4.6,
+    reviews: 45678,
+    deal: "TOWER POWER: 42% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B08R3HJDQK?tag=signupcodes-20",
     category: "tech-gadgets"
   },
   {
     id: "6",
-    title: "Anker PowerCore 10000 Portable Charger Power Bank",
-    image: "https://images.unsplash.com/photo-1609592806615-7e6baa264bd9?w=400&h=400&fit=crop&crop=center",
-    price: "$21.99",
-    originalPrice: "$35.99",
-    rating: 4.6,
-    reviews: 234567,
-    deal: "DEAL: Save $14",
-    affiliate_url: "https://www.amazon.com/dp/B019GJLER8?tag=signupcodes-20",
-    category: "tech-gadgets"
-  },
-
-  // HOME & KITCHEN - High Converting Products
-  {
-    id: "7",
-    title: "Instant Pot Duo 7-in-1 Electric Pressure Cooker 6 Quart",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop&crop=center",
-    price: "$69.95",
-    originalPrice: "$99.95",
-    rating: 4.7,
-    reviews: 567890,
-    deal: "KITCHEN SAVE: 30% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B07GBZ4Q68?tag=signupcodes-20",
-    category: "home-kitchen",
-    isFeatured: true
-  },
-  {
-    id: "8",
-    title: "Ninja Foodi Personal Blender for Shakes Smoothies",
-    image: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=400&fit=crop&crop=center",
-    price: "$39.99",
-    originalPrice: "$79.99",
-    rating: 4.4,
-    reviews: 45612,
-    deal: "BLEND DEAL: 50% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B091J4NJHF?tag=signupcodes-20",
-    category: "home-kitchen"
-  },
-  {
-    id: "9",
-    title: "Keurig K-Mini Single Serve Coffee Maker",
-    image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=400&fit=crop&crop=center",
-    price: "$59.99",
-    originalPrice: "$89.99",
-    rating: 4.3,
-    reviews: 123456,
-    deal: "COFFEE: 33% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B0BQBQZDFX?tag=signupcodes-20",
-    category: "home-kitchen"
-  },
-  {
-    id: "10",
-    title: "Lodge Cast Iron Skillet Pre-Seasoned 10.25 Inch",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop&crop=center",
-    price: "$24.90",
-    originalPrice: "$34.90",
-    rating: 4.6,
-    reviews: 287654,
-    deal: "CLASSIC: Save $10",
-    affiliate_url: "https://www.amazon.com/dp/B00006JSUB?tag=signupcodes-20",
-    category: "home-kitchen"
-  },
-  {
-    id: "11",
-    title: "Shark Navigator Lift-Away Professional Upright Vacuum",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center",
-    price: "$119.99",
-    originalPrice: "$179.99",
-    rating: 4.4,
-    reviews: 98765,
-    deal: "CLEAN UP: 33% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B0772DSFN9?tag=signupcodes-20",
-    category: "home-kitchen"
-  },
-
-  // HEALTH & FITNESS - Wellness Focused
-  {
-    id: "12",
-    title: "Fitbit Charge 5 Advanced Fitness & Health Tracker",
-    image: "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&h=400&fit=crop&crop=center",
-    price: "$129.95",
-    originalPrice: "$199.95",
-    rating: 4.2,
-    reviews: 87654,
-    deal: "FITNESS: Save $70",
-    affiliate_url: "https://www.amazon.com/dp/B0B2TZMQB9?tag=signupcodes-20",
-    category: "health-fitness",
-    isFeatured: true
-  },
-  {
-    id: "13",
-    title: "Optimum Nutrition Gold Standard 100% Whey Protein Powder",
-    image: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=400&h=400&fit=crop&crop=center",
-    price: "$54.99",
-    originalPrice: "$74.99",
-    rating: 4.5,
-    reviews: 567123,
-    deal: "PROTEIN: Save $20",
-    affiliate_url: "https://www.amazon.com/dp/B000QSNYGI?tag=signupcodes-20",
-    category: "health-fitness"
-  },
-  {
-    id: "14",
-    title: "Resistance Bands Set with Handles Door Anchor Ankle Straps",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center",
+    title: "Wireless Earbuds Bluetooth 5.3 Headphones with Charging Case",
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop&crop=center",
     price: "$19.99",
     originalPrice: "$39.99",
     rating: 4.3,
-    reviews: 76543,
-    deal: "HOME GYM: 50% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B077ZGBQ8G?tag=signupcodes-20",
-    category: "health-fitness"
-  },
-  {
-    id: "15",
-    title: "High Density Muscle Foam Roller for Deep Tissue Recovery",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center",
-    price: "$24.99",
-    originalPrice: "$39.99",
-    rating: 4.4,
-    reviews: 45321,
-    deal: "RECOVERY: 38% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B00XM2MRGI?tag=signupcodes-20",
-    category: "health-fitness"
-  },
-
-  // New categories with more products
-  {
-    id: "16",
-    title: "Bestseller Books Bundle - Top 5 Self-Help Books",
-    image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=400&fit=crop&crop=center",
-    price: "$49.99",
-    originalPrice: "$89.95",
-    rating: 4.8,
-    reviews: 23456,
-    deal: "BOOK BUNDLE: 44% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B01HSMRWNU?tag=signupcodes-20",
-    category: "books-education",
+    reviews: 234567,
+    deal: "AUDIO DEAL: 50% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B0C7QJF8F4?tag=signupcodes-20",
+    category: "tech-gadgets",
     isFeatured: true
   },
   {
-    id: "17",
-    title: "Amazon Fire TV Stick 4K Max Streaming Device",
+    id: "7",
+    title: "Fire TV Stick 4K Max Streaming Device with Wi-Fi 6",
     image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&h=400&fit=crop&crop=center",
     price: "$34.99",
     originalPrice: "$54.99",
     rating: 4.6,
     reviews: 345678,
-    deal: "STREAM: 36% OFF",
+    deal: "STREAM DEAL: 36% OFF",
     affiliate_url: "https://www.amazon.com/dp/B08MQZXN1X?tag=signupcodes-20",
     category: "tech-gadgets"
   },
   {
-    id: "18",
-    title: "Revlon One-Step Hair Dryer and Volumizer Hot Air Brush",
-    image: "https://images.unsplash.com/photo-1522338140262-f46f5913618b?w=400&h=400&fit=crop&crop=center",
-    price: "$41.88",
-    originalPrice: "$59.99",
+    id: "8",
+    title: "Apple AirTag 4 Pack - Bluetooth Item Finder",
+    image: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=400&h=400&fit=crop&crop=center",
+    price: "$79.99",
+    originalPrice: "$99.00",
+    rating: 4.7,
+    reviews: 123456,
+    deal: "FIND DEAL: $19 OFF",
+    affiliate_url: "https://www.amazon.com/dp/B0935ZF4M1?tag=signupcodes-20",
+    category: "tech-gadgets"
+  },
+  {
+    id: "9",
+    title: "TCL 55-Inch 4K Smart TV Google TV LED",
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop&crop=center",
+    price: "$299.99",
+    originalPrice: "$449.99",
+    rating: 4.4,
+    reviews: 67890,
+    deal: "BIG SCREEN: 33% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B0B7GVQN1Z?tag=signupcodes-20",
+    category: "tech-gadgets",
+    isFeatured: true
+  },
+  {
+    id: "10",
+    title: "USB Wall Charger 20W Fast Charging Block 4-Pack",
+    image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=400&fit=crop&crop=center",
+    price: "$15.99",
+    originalPrice: "$29.99",
+    rating: 4.5,
+    reviews: 98765,
+    deal: "CHARGE UP: 47% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B09X7JK3QR?tag=signupcodes-20",
+    category: "tech-gadgets"
+  },
+  {
+    id: "11",
+    title: "Fitbit Inspire 3 Health & Fitness Tracker",
+    image: "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&h=400&fit=crop&crop=center",
+    price: "$79.95",
+    originalPrice: "$99.95",
     rating: 4.2,
-    reviews: 456789,
-    deal: "BEAUTY: 30% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B01LSUQSB0?tag=signupcodes-20",
+    reviews: 54321,
+    deal: "FITNESS: $20 OFF",
+    affiliate_url: "https://www.amazon.com/dp/B0B4M8YH8J?tag=signupcodes-20",
+    category: "health-fitness"
+  },
+
+  // BEAUTY & PERSONAL CARE
+  {
+    id: "12",
+    title: "Mighty Patch Original Acne Pimple Patches",
+    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop&crop=center",
+    price: "$12.99",
+    originalPrice: "$18.99",
+    rating: 4.6,
+    reviews: 189234,
+    deal: "CLEAR SKIN: 32% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B074PVTPZ8?tag=signupcodes-20",
+    category: "beauty-personal-care",
+    isFeatured: true
+  },
+  {
+    id: "13",
+    title: "Rosemary Hair Growth Oil with Essential Oils",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center",
+    price: "$14.99",
+    originalPrice: "$24.99",
+    rating: 4.3,
+    reviews: 76543,
+    deal: "HAIR CARE: 40% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B0BG8K7M3P?tag=signupcodes-20",
     category: "beauty-personal-care"
   },
   {
-    id: "19",
+    id: "14",
+    title: "Magnetic False Eyelashes with Magnetic Eyeliner",
+    image: "https://images.unsplash.com/photo-1522338140262-f46f5913618b?w=400&h=400&fit=crop&crop=center",
+    price: "$19.99",
+    originalPrice: "$35.99",
+    rating: 4.1,
+    reviews: 43210,
+    deal: "LASH DEAL: 44% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B08KJVN2F1?tag=signupcodes-20",
+    category: "beauty-personal-care"
+  },
+  {
+    id: "15",
     title: "CeraVe Moisturizing Cream for Normal to Dry Skin",
     image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop&crop=center",
     price: "$16.08",
@@ -255,16 +205,67 @@ export const sampleProducts: Product[] = [
     category: "beauty-personal-care"
   },
   {
+    id: "16",
+    title: "Laneige Lip Sleeping Mask Berry 20g",
+    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop&crop=center",
+    price: "$17.00",
+    originalPrice: "$24.00",
+    rating: 4.8,
+    reviews: 87654,
+    deal: "LIP CARE: 29% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B074H9G8MZ?tag=signupcodes-20",
+    category: "beauty-personal-care"
+  },
+
+  // HOME & KITCHEN
+  {
+    id: "17",
+    title: "Stanley Quencher H2.0 Flowstate Tumbler 40oz",
+    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400&h=400&fit=crop&crop=center",
+    price: "$44.95",
+    originalPrice: "$49.95",
+    rating: 4.5,
+    reviews: 156789,
+    deal: "HYDRATE: $5 OFF",
+    affiliate_url: "https://www.amazon.com/dp/B0C5QDHPXQ?tag=signupcodes-20",
+    category: "home-kitchen",
+    isFeatured: true
+  },
+  {
+    id: "18",
+    title: "Owala FreeSip Insulated Stainless Steel Water Bottle",
+    image: "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400&h=400&fit=crop&crop=center",
+    price: "$27.97",
+    originalPrice: "$37.95",
+    rating: 4.6,
+    reviews: 98765,
+    deal: "SIP DEAL: 26% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B09DLGZV5Z?tag=signupcodes-20",
+    category: "home-kitchen"
+  },
+  {
+    id: "19",
+    title: "Instant Pot Duo 7-in-1 Electric Pressure Cooker 6 Quart",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop&crop=center",
+    price: "$69.95",
+    originalPrice: "$99.95",
+    rating: 4.7,
+    reviews: 567890,
+    deal: "KITCHEN SAVE: 30% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B07GBZ4Q68?tag=signupcodes-20",
+    category: "home-kitchen"
+  },
+  {
     id: "20",
-    title: "LifeStraw Personal Water Filter for Hiking Camping",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center",
-    price: "$19.95",
-    originalPrice: "$29.95",
+    title: "Digital Kitchen Scale Food Weight Scale",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop&crop=center",
+    price: "$12.99",
+    originalPrice: "$19.99",
     rating: 4.4,
-    reviews: 123457,
-    deal: "OUTDOOR: 33% OFF",
-    affiliate_url: "https://www.amazon.com/dp/B006QF3TW4?tag=signupcodes-20",
-    category: "outdoor-sports"
+    reviews: 67890,
+    deal: "WEIGH IN: 35% OFF",
+    affiliate_url: "https://www.amazon.com/dp/B01JTDG084?tag=signupcodes-20",
+    category: "home-kitchen"
   }
 ];
 
