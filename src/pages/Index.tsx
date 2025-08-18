@@ -11,9 +11,13 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { sampleProducts, featuredProducts } from "@/data/sampleProducts";
 import { useProductFilter } from "@/hooks/useProductFilter";
-import { TrendingUp, Clock, Award } from "lucide-react";
+import { TrendingUp, Clock, Award, BookOpen } from "lucide-react";
 import { HeaderAd, InContentAd, SidebarAd, FooterAd } from "@/components/ads/AdUnit";
 import { CookieConsent } from "@/components/privacy/CookieConsent";
+import { TestimonialSection } from "@/components/testimonials/TestimonialSection";
+import { DealOfTheDay } from "@/components/urgency/UrgencyElements";
+import { BuyingGuideCard } from "@/components/guides/BuyingGuideCard";
+import { buyingGuides } from "@/data/buyingGuides";
 
 const Index = () => {
   const {
@@ -117,8 +121,9 @@ const Index = () => {
               </div>
               
               {/* Sidebar */}
-              <div className="lg:col-span-1">
+              <div className="lg:col-span-1 space-y-6">
                 <SidebarAd />
+                <DealOfTheDay />
               </div>
             </div>
           </div>
@@ -152,6 +157,48 @@ const Index = () => {
             </div>
           </section>
         )}
+
+        {/* Buying Guides Section (only show if no filters) */}
+        {!hasFilters && (
+          <section className="py-16 bg-gradient-to-br from-accent/5 to-primary/5">
+            <div className="container-custom space-y-8">
+              <div className="text-center space-y-4">
+                <div className="flex items-center justify-center space-x-2">
+                  <BookOpen className="w-6 h-6 text-primary" />
+                  <Badge variant="secondary" className="text-sm font-bold">
+                    📚 EXPERT GUIDES
+                  </Badge>
+                </div>
+                <h2 className="text-3xl font-bold">Smart Shopping Guides</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Make informed decisions with our detailed buying guides and product comparisons
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {buyingGuides.slice(0, 4).map((guide) => (
+                  <BuyingGuideCard 
+                    key={guide.id}
+                    guide={guide}
+                    onReadMore={(guide) => {
+                      // For now, just scroll to top - in future this could open a modal or navigate
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                  />
+                ))}
+              </div>
+              
+              <div className="text-center">
+                <Button variant="outline" size="lg">
+                  View All Buying Guides
+                </Button>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Testimonials Section */}
+        <TestimonialSection />
 
         {/* Categories Section (only show if no filters) */}
         {!hasFilters && (

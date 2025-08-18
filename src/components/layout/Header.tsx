@@ -20,11 +20,11 @@ export const Header = () => {
             <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
               About
             </Link>
+            <Link to="/buying-guides" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+              Buying Guides
+            </Link>
             <Link to="/contact" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
               Contact
-            </Link>
-            <Link to="/privacy-policy" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-              Privacy
             </Link>
             <Button variant="cta" size="sm">
               Best Deals
