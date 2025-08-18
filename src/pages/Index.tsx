@@ -61,7 +61,7 @@ const Index = () => {
         </section>
 
         {/* Results Section */}
-        <section className="py-12">
+        <section className="py-12" data-products-section>
           <div className="container-custom space-y-8">
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-bold">

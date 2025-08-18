@@ -21,14 +21,6 @@ export function trackAffiliateClick(productId: string, productTitle: string, cat
       affiliate_program: 'amazon_associates'
     });
   }
-
-  // Optional: Track with other analytics services
-  console.log('Affiliate click tracked:', {
-    productId,
-    productTitle,
-    category,
-    timestamp: new Date().toISOString()
-  });
 }
 
 /**
