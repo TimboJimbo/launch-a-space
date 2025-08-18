@@ -17,14 +17,14 @@ export const Header = () => {
           </Link>
           
           <div className="hidden md:flex items-center space-x-6">
+            <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+              About
+            </Link>
             <Link to="/contact" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
               Contact
             </Link>
             <Link to="/privacy-policy" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
               Privacy
-            </Link>
-            <Link to="/terms-of-service" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-              Terms
             </Link>
             <Button variant="cta" size="sm">
               Best Deals

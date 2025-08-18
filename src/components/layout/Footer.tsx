@@ -37,12 +37,16 @@ export const Footer = () => {
           
           {/* Resources */}
           <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
+            <h4 className="font-semibold mb-4">Company</h4>
             <div className="space-y-2 text-sm">
-              <span className="block text-muted-foreground">Best Sellers</span>
-              <span className="block text-muted-foreground">Latest Deals</span>
+              <Link to="/about" className="block text-muted-foreground hover:text-accent transition-colors">
+                About Us
+              </Link>
+              <Link to="/contact" className="block text-muted-foreground hover:text-accent transition-colors">
+                Contact Us
+              </Link>
               <span className="block text-muted-foreground">How It Works</span>
-              <span className="block text-muted-foreground">Product Reviews</span>
+              <span className="block text-muted-foreground">Partner Program</span>
             </div>
           </div>
           

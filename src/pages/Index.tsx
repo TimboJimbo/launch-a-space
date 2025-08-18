@@ -5,12 +5,27 @@ import { ProductCard } from "@/components/layout/ProductCard";
 import { Footer } from "@/components/layout/Footer";
 import { FtcDisclosure } from "@/components/layout/FtcDisclosure";
 import { NewsletterSignup } from "@/components/layout/NewsletterSignup";
+import { SearchFilter } from "@/components/ui/search-filter";
+import { QuickActionBar } from "@/components/layout/QuickActionBar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { sampleProducts, featuredProducts } from "@/data/sampleProducts";
+import { useProductFilter } from "@/hooks/useProductFilter";
 import { TrendingUp, Clock, Award } from "lucide-react";
 
 const Index = () => {
+  const {
+    filteredProducts,
+    filters,
+    updateSearch,
+    updateCategory,
+    updatePriceRange,
+    updateQuickFilter,
+    clearFilters
+  } = useProductFilter(sampleProducts);
+
+  const hasFilters = filters.search || filters.category || filters.priceRange || filters.quickFilter;
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -18,88 +33,106 @@ const Index = () => {
       <main>
         <HeroSection />
         
-        {/* Featured Deals Section */}
-        <section className="py-16 bg-surface">
-          <div className="container-custom space-y-8">
-            <div className="text-center space-y-4">
-              <div className="flex items-center justify-center space-x-2">
-                <Award className="w-6 h-6 text-primary" />
-                <Badge variant="destructive" className="text-sm font-bold animate-pulse-cta">
-                  🔥 EDITOR'S CHOICE - ENDING SOON!
-                </Badge>
-              </div>
-              <h2 className="text-3xl font-bold">Today's HOTTEST Featured Deals</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                <span className="font-semibold text-foreground">Hand-picked deals</span> with 
-                <span className="font-semibold text-success">verified savings</span> from trusted retailers. 
-                <span className="font-semibold text-destructive">Updated daily with fresh offers!</span>
-              </p>
-            </div>
-            
-            <div className="product-grid-featured">
-              {featuredProducts.map((product) => (
-                <ProductCard 
-                  key={product.id}
-                  {...product}
-                />
-              ))}
-              {sampleProducts.slice(1, 4).map((product) => (
-                <ProductCard 
-                  key={product.id}
-                  {...product}
-                />
-              ))}
-            </div>
-            
-            <div className="text-center">
-              <Button variant="outline" size="lg">
-                View All Featured Deals
-              </Button>
-            </div>
-          </div>
-        </section>
+        {/* Quick Action Bar */}
+        <QuickActionBar 
+          onQuickFilter={(filter) => {
+            clearFilters();
+            updateQuickFilter(filter);
+          }} 
+          productCount={sampleProducts.length}
+        />
         
-        {/* Categories Section */}
-        <section className="py-16">
+        {/* Search & Filter Section */}
+        <section className="py-8 bg-gradient-to-br from-primary/5 to-success/5">
           <div className="container-custom">
-            <CategoryGrid />
+            <div className="text-center mb-6">
+              <h2 className="text-2xl font-bold mb-2">Find Your Perfect Deal</h2>
+              <p className="text-muted-foreground">Skip the Amazon maze - we've done the searching for you!</p>
+            </div>
+            
+            <SearchFilter
+              onSearch={updateSearch}
+              onCategoryFilter={updateCategory}
+              onPriceFilter={updatePriceRange}
+              onClearFilters={clearFilters}
+              activeFilters={filters}
+            />
           </div>
         </section>
-        
-        {/* Latest Deals */}
-        <section className="py-16 bg-muted/30">
+
+        {/* Results Section */}
+        <section className="py-12">
           <div className="container-custom space-y-8">
-            <div className="text-center space-y-4">
-              <div className="flex items-center justify-center space-x-2">
-                <Clock className="w-6 h-6 text-accent" />
-                <Badge variant="destructive" className="text-sm font-bold animate-pulse-cta">
-                  ⚡ JUST ADDED - GRAB THEM FAST!
-                </Badge>
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl font-bold">
+                {hasFilters ? `Found ${filteredProducts.length} Deals` : "All Deals"}
+              </h2>
+              {hasFilters && (
+                <Button variant="outline" onClick={clearFilters}>
+                  Show All Products
+                </Button>
+              )}
+            </div>
+            
+            {filteredProducts.length > 0 ? (
+              <div className="product-grid">
+                {filteredProducts.map((product) => (
+                  <ProductCard 
+                    key={product.id}
+                    {...product}
+                  />
+                ))}
               </div>
-              <h2 className="text-3xl font-bold">Latest FLASH Deals & Steals</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                <span className="font-bold text-destructive">NEW:</span> Fresh deals added regularly! 
-                <span className="font-semibold text-foreground">Discover savings from top brands.</span>
-                Don't miss these great offers from trusted retailers!
-              </p>
-            </div>
-            
-            <div className="product-grid">
-              {sampleProducts.slice(0, 6).map((product) => (
-                <ProductCard 
-                  key={product.id}
-                  {...product}
-                />
-              ))}
-            </div>
-            
-            <div className="text-center">
-            <Button variant="cta" size="lg" className="text-lg px-8 font-bold animate-pulse-cta">
-              🛒 GRAB THIS DEAL NOW - LIMITED TIME!</Button>
-            </div>
+            ) : (
+              <div className="text-center py-12">
+                <h3 className="text-xl font-semibold mb-2">No deals found</h3>
+                <p className="text-muted-foreground mb-4">Try adjusting your filters or search terms</p>
+                <Button onClick={clearFilters}>
+                  Clear All Filters
+                </Button>
+              </div>
+            )}
           </div>
         </section>
-        
+
+        {/* Featured Deals Section (only show if no filters) */}
+        {!hasFilters && (
+          <section className="py-16 bg-surface">
+            <div className="container-custom space-y-8">
+              <div className="text-center space-y-4">
+                <div className="flex items-center justify-center space-x-2">
+                  <Award className="w-6 h-6 text-primary" />
+                  <Badge variant="destructive" className="text-sm font-bold animate-pulse-cta">
+                    🔥 EDITOR'S CHOICE
+                  </Badge>
+                </div>
+                <h2 className="text-3xl font-bold">Today's Featured Deals</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Hand-picked deals with verified savings from trusted retailers.
+                </p>
+              </div>
+              
+              <div className="product-grid-featured">
+                {featuredProducts.map((product) => (
+                  <ProductCard 
+                    key={product.id}
+                    {...product}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Categories Section (only show if no filters) */}
+        {!hasFilters && (
+          <section className="py-16">
+            <div className="container-custom">
+              <CategoryGrid />
+            </div>
+          </section>
+        )}
+
         {/* Trust & Value Proposition */}
         <section className="py-20 bg-gradient-to-br from-primary/8 to-success/5">
           <div className="container-custom">
