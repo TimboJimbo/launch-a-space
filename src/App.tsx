@@ -9,6 +9,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import DmcaPolicy from "./pages/DmcaPolicy";
 import Contact from "./pages/Contact";
+import LinkTester from "./pages/LinkTester";
 import NotFound from "./pages/NotFound";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -55,6 +56,13 @@ const App = () => (
             <>
               <Header />
               <Contact />
+              <Footer />
+            </>
+          } />
+          <Route path="/link-tester" element={
+            <>
+              <Header />
+              <LinkTester />
               <Footer />
             </>
           } />

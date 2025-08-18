@@ -45,7 +45,9 @@ export const Footer = () => {
               <Link to="/contact" className="block text-muted-foreground hover:text-accent transition-colors">
                 Contact Us
               </Link>
-              <span className="block text-muted-foreground">How It Works</span>
+              <Link to="/link-tester" className="block text-muted-foreground hover:text-accent transition-colors">
+                Link Tester
+              </Link>
               <span className="block text-muted-foreground">Partner Program</span>
             </div>
           </div>
