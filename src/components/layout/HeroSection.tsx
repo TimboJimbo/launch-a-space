@@ -39,10 +39,23 @@ export const HeroSection = () => {
           
           {/* Hero CTAs */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button variant="cta" size="lg" className="text-xl px-12 py-4 h-auto shadow-2xl">
+            <Button 
+              variant="cta" 
+              size="lg" 
+              className="text-xl px-12 py-4 h-auto shadow-2xl"
+              onClick={() => {
+                const productsSection = document.querySelector('[data-products-section]');
+                productsSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               🛍️ Browse Curated Deals
             </Button>
-            <Button variant="trust" size="lg" className="text-lg px-8 py-3 h-auto">
+            <Button 
+              variant="trust" 
+              size="lg" 
+              className="text-lg px-8 py-3 h-auto"
+              onClick={() => window.open('/about', '_blank')}
+            >
               🔍 How We Select Deals
             </Button>
           </div>
