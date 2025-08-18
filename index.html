@@ -34,12 +34,21 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8757905862194096"
          crossorigin="anonymous"></script>
     
-    <!-- Google Analytics GA4 -->
+    <!-- Google Analytics GA4 with Enhanced Consent -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LGPRK5NX6"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+      
+      // Initialize consent to denied for all cookies
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+      
       gtag('config', 'G-2LGPRK5NX6');
     </script>
     

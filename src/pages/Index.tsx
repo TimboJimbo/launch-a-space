@@ -12,6 +12,8 @@ import { Button } from "@/components/ui/button";
 import { sampleProducts, featuredProducts } from "@/data/sampleProducts";
 import { useProductFilter } from "@/hooks/useProductFilter";
 import { TrendingUp, Clock, Award } from "lucide-react";
+import { HeaderAd, InContentAd, SidebarAd, FooterAd } from "@/components/ads/AdUnit";
+import { CookieConsent } from "@/components/privacy/CookieConsent";
 
 const Index = () => {
   const {
@@ -29,6 +31,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <HeaderAd />
       
       <main>
         <HeroSection />
@@ -60,38 +63,64 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Results Section */}
+        {/* Results Section with Sidebar */}
         <section className="py-12" data-products-section>
-          <div className="container-custom space-y-8">
-            <div className="flex items-center justify-between">
-              <h2 className="text-2xl font-bold">
-                {hasFilters ? `Found ${filteredProducts.length} Deals` : "All Deals"}
-              </h2>
-              {hasFilters && (
-                <Button variant="outline" onClick={clearFilters}>
-                  Show All Products
-                </Button>
-              )}
+          <div className="container-custom">
+            <div className="grid lg:grid-cols-4 gap-8">
+              {/* Main Content Area */}
+              <div className="lg:col-span-3 space-y-8">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-2xl font-bold">
+                    {hasFilters ? `Found ${filteredProducts.length} Deals` : "All Deals"}
+                  </h2>
+                  {hasFilters && (
+                    <Button variant="outline" onClick={clearFilters}>
+                      Show All Products
+                    </Button>
+                  )}
+                </div>
+                
+                {filteredProducts.length > 0 ? (
+                  <>
+                    <div className="product-grid">
+                      {filteredProducts.slice(0, 9).map((product) => (
+                        <ProductCard 
+                          key={product.id}
+                          {...product}
+                        />
+                      ))}
+                    </div>
+                    
+                    {filteredProducts.length > 9 && (
+                      <>
+                        <InContentAd />
+                        <div className="product-grid">
+                          {filteredProducts.slice(9).map((product) => (
+                            <ProductCard 
+                              key={product.id}
+                              {...product}
+                            />
+                          ))}
+                        </div>
+                      </>
+                    )}
+                  </>
+                ) : (
+                  <div className="text-center py-12">
+                    <h3 className="text-xl font-semibold mb-2">No deals found</h3>
+                    <p className="text-muted-foreground mb-4">Try adjusting your filters or search terms</p>
+                    <Button onClick={clearFilters}>
+                      Clear All Filters
+                    </Button>
+                  </div>
+                )}
+              </div>
+              
+              {/* Sidebar */}
+              <div className="lg:col-span-1">
+                <SidebarAd />
+              </div>
             </div>
-            
-            {filteredProducts.length > 0 ? (
-              <div className="product-grid">
-                {filteredProducts.map((product) => (
-                  <ProductCard 
-                    key={product.id}
-                    {...product}
-                  />
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-12">
-                <h3 className="text-xl font-semibold mb-2">No deals found</h3>
-                <p className="text-muted-foreground mb-4">Try adjusting your filters or search terms</p>
-                <Button onClick={clearFilters}>
-                  Clear All Filters
-                </Button>
-              </div>
-            )}
           </div>
         </section>
 
@@ -216,9 +245,11 @@ const Index = () => {
         </section>
       </main>
       
+      <FooterAd />
       <NewsletterSignup />
       <FtcDisclosure />
       <Footer />
+      <CookieConsent />
     </div>
   );
 };
