@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,14 +10,14 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <h3 className="text-xl font-bold text-primary">
                 SignUp<span className="text-accent">Codes</span>
               </h3>
               <Badge variant="secondary" className="text-xs">
                 Trusted
               </Badge>
-            </div>
+            </Link>
             <p className="text-sm text-muted-foreground">
               Your trusted source for the best deals, sign-up bonuses, and product recommendations. 
               We help you save money with honest, expert guidance.
@@ -27,18 +28,10 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Categories</h4>
             <div className="space-y-2 text-sm">
-              <a href="/categories/tech-gadgets" className="block text-muted-foreground hover:text-accent transition-colors">
-                Tech & Gadgets
-              </a>
-              <a href="/categories/home-kitchen" className="block text-muted-foreground hover:text-accent transition-colors">
-                Home & Kitchen
-              </a>
-              <a href="/categories/health-fitness" className="block text-muted-foreground hover:text-accent transition-colors">
-                Health & Fitness
-              </a>
-              <a href="/categories/fashion-beauty" className="block text-muted-foreground hover:text-accent transition-colors">
-                Fashion & Beauty
-              </a>
+              <span className="block text-muted-foreground">Tech & Gadgets</span>
+              <span className="block text-muted-foreground">Home & Kitchen</span>
+              <span className="block text-muted-foreground">Health & Fitness</span>
+              <span className="block text-muted-foreground">Beauty & Personal Care</span>
             </div>
           </div>
           
@@ -46,18 +39,10 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Resources</h4>
             <div className="space-y-2 text-sm">
-              <a href="/best-sellers" className="block text-muted-foreground hover:text-accent transition-colors">
-                Best Sellers
-              </a>
-              <a href="/deals" className="block text-muted-foreground hover:text-accent transition-colors">
-                Latest Deals
-              </a>
-              <a href="/how-it-works" className="block text-muted-foreground hover:text-accent transition-colors">
-                How It Works
-              </a>
-              <a href="/reviews" className="block text-muted-foreground hover:text-accent transition-colors">
-                Product Reviews
-              </a>
+              <span className="block text-muted-foreground">Best Sellers</span>
+              <span className="block text-muted-foreground">Latest Deals</span>
+              <span className="block text-muted-foreground">How It Works</span>
+              <span className="block text-muted-foreground">Product Reviews</span>
             </div>
           </div>
           
@@ -65,18 +50,18 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <div className="space-y-2 text-sm">
-              <a href="/privacy-policy" className="block text-muted-foreground hover:text-accent transition-colors">
+              <Link to="/privacy-policy" className="block text-muted-foreground hover:text-accent transition-colors">
                 Privacy Policy
-              </a>
-              <a href="/terms-of-service" className="block text-muted-foreground hover:text-accent transition-colors">
+              </Link>
+              <Link to="/terms-of-service" className="block text-muted-foreground hover:text-accent transition-colors">
                 Terms of Service
-              </a>
-              <a href="/dmca-policy" className="block text-muted-foreground hover:text-accent transition-colors">
+              </Link>
+              <Link to="/dmca-policy" className="block text-muted-foreground hover:text-accent transition-colors">
                 DMCA Policy
-              </a>
-              <a href="/contact" className="block text-muted-foreground hover:text-accent transition-colors">
+              </Link>
+              <Link to="/contact" className="block text-muted-foreground hover:text-accent transition-colors">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
