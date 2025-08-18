@@ -65,14 +65,14 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <div className="space-y-2 text-sm">
-              <a href="/disclosure" className="block text-muted-foreground hover:text-accent transition-colors">
-                Affiliate Disclosure
-              </a>
-              <a href="/privacy" className="block text-muted-foreground hover:text-accent transition-colors">
+              <a href="/privacy-policy" className="block text-muted-foreground hover:text-accent transition-colors">
                 Privacy Policy
               </a>
-              <a href="/terms" className="block text-muted-foreground hover:text-accent transition-colors">
+              <a href="/terms-of-service" className="block text-muted-foreground hover:text-accent transition-colors">
                 Terms of Service
+              </a>
+              <a href="/dmca-policy" className="block text-muted-foreground hover:text-accent transition-colors">
+                DMCA Policy
               </a>
               <a href="/contact" className="block text-muted-foreground hover:text-accent transition-colors">
                 Contact Us

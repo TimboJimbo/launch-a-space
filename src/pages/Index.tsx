@@ -4,6 +4,7 @@ import { CategoryGrid } from "@/components/layout/CategoryGrid";
 import { ProductCard } from "@/components/layout/ProductCard";
 import { Footer } from "@/components/layout/Footer";
 import { FtcDisclosure } from "@/components/layout/FtcDisclosure";
+import { NewsletterSignup } from "@/components/layout/NewsletterSignup";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { sampleProducts, featuredProducts } from "@/data/sampleProducts";
@@ -182,6 +183,7 @@ const Index = () => {
         </section>
       </main>
       
+      <NewsletterSignup />
       <FtcDisclosure />
       <Footer />
     </div>

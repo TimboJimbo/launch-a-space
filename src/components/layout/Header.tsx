@@ -16,17 +16,17 @@ export const Header = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
-            <a href="/categories" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-              Categories
+            <a href="/contact" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+              Contact
             </a>
-            <a href="/best-sellers" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-              Best Sellers
+            <a href="/privacy-policy" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+              Privacy
             </a>
-            <a href="/deals" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-              Latest Deals
+            <a href="/terms-of-service" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+              Terms
             </a>
             <Button variant="cta" size="sm">
-              Sign Up Bonuses
+              Best Deals
             </Button>
           </div>
         </nav>

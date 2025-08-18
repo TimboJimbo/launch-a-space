@@ -45,19 +45,51 @@
       gtag('config', 'G-2LGPRK5NX6');
     </script>
     
-    <!-- Structured Data -->
+    <!-- Enhanced Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "SignUpCodes",
-      "description": "Find the best deals, promo codes, and sign-up bonuses",
-      "url": "https://signupcodes.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://signupcodes.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://signupcodes.com/#website",
+          "name": "SignUpCodes",
+          "description": "Find the best deals, promo codes, and sign-up bonuses",
+          "url": "https://signupcodes.com",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://signupcodes.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://signupcodes.com/#organization",
+          "name": "SignUpCodes",
+          "url": "https://signupcodes.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://signupcodes.com/logo.png"
+          },
+          "sameAs": [
+            "https://twitter.com/signupcodes",
+            "https://facebook.com/signupcodes"
+          ]
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://signupcodes.com/#webpage",
+          "url": "https://signupcodes.com",
+          "name": "SignUpCodes - Best Deals, Promo Codes & Sign-Up Bonuses",
+          "isPartOf": {
+            "@id": "https://signupcodes.com/#website"
+          },
+          "about": {
+            "@id": "https://signupcodes.com/#organization"
+          },
+          "description": "Find the best deals, exclusive promo codes, and sign-up bonuses. Join smart shoppers who save money with verified offers."
+        }
+      ]
     }
     </script>
     
