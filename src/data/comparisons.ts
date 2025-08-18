@@ -28,7 +28,7 @@ export const productComparisons: ProductComparison[] = [
       {
         id: "sony-wh-1000xm5",
         name: "Sony WH-1000XM5",
-        image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop",
         price: "$328.00",
         originalPrice: "$399.99", 
         affiliate_url: "https://www.amazon.com/dp/B09XJ5B38Q?tag=signupcodes-20",
@@ -56,7 +56,7 @@ export const productComparisons: ProductComparison[] = [
       {
         id: "apple-airpods-pro-2",
         name: "Apple AirPods Pro (2nd Gen)",
-        image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=300&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=300&h=300&fit=crop",
         price: "$179.99",
         originalPrice: "$249.99",
         affiliate_url: "https://www.amazon.com/dp/B0BDHWDR12?tag=signupcodes-20",
@@ -84,7 +84,7 @@ export const productComparisons: ProductComparison[] = [
       {
         id: "bose-quietcomfort-45",
         name: "Bose QuietComfort 45",
-        image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop",
         price: "$229.00",
         originalPrice: "$329.00",
         affiliate_url: "https://www.amazon.com/dp/B098FKXT8L?tag=signupcodes-20",
@@ -119,7 +119,7 @@ export const productComparisons: ProductComparison[] = [
       {
         id: "tp-link-kasa-ep25",
         name: "TP-Link Kasa Smart Plug EP25",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1609198092587-b7c0421c86d3?w=300&h=300&fit=crop",
         price: "$12.99",
         originalPrice: "$19.99",
         affiliate_url: "https://www.amazon.com/dp/B07B8W2KHZ?tag=signupcodes-20",
@@ -147,7 +147,7 @@ export const productComparisons: ProductComparison[] = [
       {
         id: "amazon-smart-plug",
         name: "Amazon Smart Plug",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1609198092587-b7c0421c86d3?w=300&h=300&fit=crop",
         price: "$9.99",
         originalPrice: "$14.99", 
         affiliate_url: "https://www.amazon.com/dp/B089DR29T6?tag=signupcodes-20",

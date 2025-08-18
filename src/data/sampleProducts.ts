@@ -17,7 +17,7 @@ export const sampleProducts: Product[] = [
   {
     id: "1",
     title: "Apple AirPods Pro (2nd Generation) with Wireless Charging Case",
-    image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=400&h=400&fit=crop&crop=center",
     price: "$179.99",
     originalPrice: "$249.99",
     rating: 4.8,
@@ -30,7 +30,7 @@ export const sampleProducts: Product[] = [
   {
     id: "2",
     title: "Samsung Galaxy Watch 6 Classic 47mm Bluetooth Smartwatch",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&h=400&fit=crop&crop=center",
     price: "$279.99",
     originalPrice: "$429.99",
     rating: 4.6,
@@ -43,7 +43,7 @@ export const sampleProducts: Product[] = [
   {
     id: "3",
     title: "Sony WH-1000XM5 Wireless Industry Leading Noise Canceling Headphones",
-    image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&crop=center",
     price: "$328.00",
     originalPrice: "$399.99",
     rating: 4.7,
@@ -58,7 +58,7 @@ export const sampleProducts: Product[] = [
   {
     id: "4",
     title: "POWRUI Surge Protector with 12 Outlets and 4 USB Ports",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1609198092587-b7c0421c86d3?w=400&h=400&fit=crop&crop=center",
     price: "$29.99",
     originalPrice: "$49.99",
     rating: 4.5,
@@ -70,7 +70,7 @@ export const sampleProducts: Product[] = [
   {
     id: "5",
     title: "Hanycony Surge Protector Tower 14 Outlets Power Strip",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1609198092587-b7c0421c86d3?w=400&h=400&fit=crop&crop=center",
     price: "$34.99",
     originalPrice: "$59.99",
     rating: 4.6,
@@ -82,7 +82,7 @@ export const sampleProducts: Product[] = [
   {
     id: "6",
     title: "Wireless Earbuds Bluetooth 5.3 Headphones with Charging Case",
-    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&h=400&fit=crop&crop=center",
     price: "$19.99",
     originalPrice: "$39.99",
     rating: 4.3,
@@ -95,7 +95,7 @@ export const sampleProducts: Product[] = [
   {
     id: "7",
     title: "Fire TV Stick 4K Max Streaming Device with Wi-Fi 6",
-    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&h=400&fit=crop&crop=center",
     price: "$34.99",
     originalPrice: "$54.99",
     rating: 4.6,
@@ -107,7 +107,7 @@ export const sampleProducts: Product[] = [
   {
     id: "8",
     title: "Apple AirTag 4 Pack - Bluetooth Item Finder",
-    image: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=400&h=400&fit=crop&crop=center",
     price: "$79.99",
     originalPrice: "$99.00",
     rating: 4.7,
@@ -119,7 +119,7 @@ export const sampleProducts: Product[] = [
   {
     id: "9",
     title: "TCL 55-Inch 4K Smart TV Google TV LED",
-    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&h=400&fit=crop&crop=center",
     price: "$299.99",
     originalPrice: "$449.99",
     rating: 4.4,
@@ -132,7 +132,7 @@ export const sampleProducts: Product[] = [
   {
     id: "10",
     title: "USB Wall Charger 20W Fast Charging Block 4-Pack",
-    image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1609613101112-a92b0ffa6f2a?w=400&h=400&fit=crop&crop=center",
     price: "$15.99",
     originalPrice: "$29.99",
     rating: 4.5,
@@ -144,7 +144,7 @@ export const sampleProducts: Product[] = [
   {
     id: "11",
     title: "Fitbit Inspire 3 Health & Fitness Tracker",
-    image: "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop&crop=center",
     price: "$79.95",
     originalPrice: "$99.95",
     rating: 4.2,
@@ -158,7 +158,7 @@ export const sampleProducts: Product[] = [
   {
     id: "12",
     title: "Mighty Patch Original Acne Pimple Patches",
-    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&h=400&fit=crop&crop=center",
     price: "$12.99",
     originalPrice: "$18.99",
     rating: 4.6,
@@ -171,7 +171,7 @@ export const sampleProducts: Product[] = [
   {
     id: "13",
     title: "Rosemary Hair Growth Oil with Essential Oils",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=400&fit=crop&crop=center",
     price: "$14.99",
     originalPrice: "$24.99",
     rating: 4.3,
@@ -183,7 +183,7 @@ export const sampleProducts: Product[] = [
   {
     id: "14",
     title: "Magnetic False Eyelashes with Magnetic Eyeliner",
-    image: "https://images.unsplash.com/photo-1522338140262-f46f5913618b?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1631214540181-1b5d2c47fe8e?w=400&h=400&fit=crop&crop=center",
     price: "$19.99",
     originalPrice: "$35.99",
     rating: 4.1,
@@ -195,7 +195,7 @@ export const sampleProducts: Product[] = [
   {
     id: "15",
     title: "CeraVe Moisturizing Cream for Normal to Dry Skin",
-    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop&crop=center",
     price: "$16.08",
     originalPrice: "$23.99",
     rating: 4.7,
@@ -207,7 +207,7 @@ export const sampleProducts: Product[] = [
   {
     id: "16",
     title: "Laneige Lip Sleeping Mask Berry 20g",
-    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop&crop=center",
     price: "$17.00",
     originalPrice: "$24.00",
     rating: 4.8,
@@ -221,7 +221,7 @@ export const sampleProducts: Product[] = [
   {
     id: "17",
     title: "Stanley Quencher H2.0 Flowstate Tumbler 40oz",
-    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1592920142926-f8981b067263?w=400&h=400&fit=crop&crop=center",
     price: "$44.95",
     originalPrice: "$49.95",
     rating: 4.5,
@@ -246,7 +246,7 @@ export const sampleProducts: Product[] = [
   {
     id: "19",
     title: "Instant Pot Duo 7-in-1 Electric Pressure Cooker 6 Quart",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1585515656760-37f011aa701b?w=400&h=400&fit=crop&crop=center",
     price: "$69.95",
     originalPrice: "$99.95",
     rating: 4.7,
@@ -258,7 +258,7 @@ export const sampleProducts: Product[] = [
   {
     id: "20",
     title: "Digital Kitchen Scale Food Weight Scale",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1594736797933-d0e1a3fb9ded?w=400&h=400&fit=crop&crop=center",
     price: "$12.99",
     originalPrice: "$19.99",
     rating: 4.4,
@@ -271,7 +271,7 @@ export const sampleProducts: Product[] = [
   {
     id: "21",
     title: "Ninja Foodi Personal Blender for Shakes Smoothies",
-    image: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1585904115019-7047cd7b1a41?w=400&h=400&fit=crop&crop=center",
     price: "$39.99",
     originalPrice: "$79.99",
     rating: 4.4,
@@ -283,7 +283,7 @@ export const sampleProducts: Product[] = [
   {
     id: "22",
     title: "Meat Thermometer Digital Instant Read",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&h=400&fit=crop&crop=center",
     price: "$12.99",
     originalPrice: "$24.99",
     rating: 4.5,
@@ -295,7 +295,7 @@ export const sampleProducts: Product[] = [
   {
     id: "23",
     title: "Countertop Ice Maker Machine - Makes Ice in 6 Minutes",
-    image: "https://images.unsplash.com/photo-1569175635942-9a4c4c6ccb29?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1591799265444-d66432b91588?w=400&h=400&fit=crop&crop=center",
     price: "$89.99",
     originalPrice: "$149.99",
     rating: 4.3,
@@ -307,7 +307,7 @@ export const sampleProducts: Product[] = [
   {
     id: "24",
     title: "Portable Washing Machine 17.8lbs Twin Tub",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1586140022978-4e89ac78d7f0?w=400&h=400&fit=crop&crop=center",
     price: "$179.99",
     originalPrice: "$269.99",
     rating: 4.2,
@@ -319,7 +319,7 @@ export const sampleProducts: Product[] = [
   {
     id: "25",
     title: "Mini Fridge 3.2 Cu Ft Compact Refrigerator",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1586140022978-4e89ac78d7f0?w=400&h=400&fit=crop&crop=center",
     price: "$129.99",
     originalPrice: "$199.99",
     rating: 4.4,

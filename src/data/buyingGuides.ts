@@ -21,7 +21,7 @@ export const buyingGuides: BuyingGuide[] = [
     title: "Ultimate Wireless Headphones Buying Guide 2024",
     category: "tech-gadgets",
     description: "Everything you need to know to choose the perfect wireless headphones for your needs and budget.",
-    image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=400&fit=crop",
     readTime: "8 min read",
     lastUpdated: "Updated Jan 2024",
     keyPoints: [
