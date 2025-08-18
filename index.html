@@ -27,6 +27,43 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://signupcodes.com" />
     
+    <!-- Analytics & Verification -->
+    <!-- Google Search Console verification -->
+    <meta name="google-site-verification" content="@@GSC_TOKEN@@" />
+    
+    <!-- (Optional) Bing Webmaster verification -->
+    <meta name="msvalidate.01" content="@@BING_TOKEN@@" />
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','@@GTM_CONTAINER_ID@@');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- GA4 (gtag.js). If you use GTM instead, remove this and configure GA4 in GTM. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=@@GA4_MEASUREMENT_ID@@"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // GA4 config
+      gtag('config', '@@GA4_MEASUREMENT_ID@@', {
+        'anonymize_ip': true,
+        'send_page_view': true
+      });
+    </script>
+    
+    <!-- (Optional) Google Ads gtag (if you run conversions) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-@@ADS_ID@@"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-@@ADS_ID@@');
+    </script> -->
+    
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -50,6 +87,11 @@
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=@@GTM_CONTAINER_ID@@"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
