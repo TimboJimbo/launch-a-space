@@ -12,7 +12,7 @@ export const HeroSection = () => {
         <div className="text-center space-y-8 max-w-5xl mx-auto">
           {/* Urgency Badge */}
           <Badge variant="destructive" className="text-sm px-6 py-2 bg-gradient-to-r from-destructive to-red-600 animate-pulse font-bold text-base">
-            🔥 LIMITED TIME: New deals added every hour!
+            🔥 NEW: Fresh deals added regularly!
           </Badge>
           
           {/* Hero Headline */}
@@ -22,18 +22,18 @@ export const HeroSection = () => {
               & <span className="text-success">Biggest Savings</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              <strong className="text-primary">Expert-curated deals</strong> with up to <strong className="text-success">90% OFF</strong>. 
-              Exclusive sign-up bonuses you won't find anywhere else.
+              <strong className="text-primary">Expert-curated deals</strong> with up to <strong className="text-success">80% OFF</strong>. 
+              Discover exclusive offers and sign-up bonuses from trusted retailers.
             </p>
             
             {/* Social Proof */}
             <div className="flex items-center justify-center space-x-6 text-sm text-muted-foreground">
               <div className="flex items-center space-x-1">
                 <span className="text-yellow-400">★★★★★</span>
-                <span className="font-medium">4.9/5 from 47,892+ reviews</span>
+                <span className="font-medium">Trusted by thousands of shoppers</span>
               </div>
               <div className="hidden md:block w-1 h-1 bg-muted-foreground rounded-full"></div>
-              <span className="font-medium">💰 $12.7M+ saved by our users</span>
+              <span className="font-medium">💰 Start saving today</span>
             </div>
           </div>
           
@@ -50,7 +50,7 @@ export const HeroSection = () => {
           {/* Urgency Counter */}
           <div className="bg-warning/10 border-2 border-warning/30 rounded-xl p-4 max-w-md mx-auto">
             <p className="text-warning font-bold text-lg">
-              ⏰ 23 flash deals expire in the next 4 hours!
+              🎯 Don't miss out on today's featured deals!
             </p>
           </div>
           
@@ -66,8 +66,8 @@ export const HeroSection = () => {
             <div className="flex items-center justify-center space-x-3 p-4 bg-success-light rounded-xl border border-success/20">
               <TrendingUp className="w-8 h-8 text-success" />
               <div className="text-left">
-                <div className="text-sm font-bold text-success">Updated Hourly</div>
-                <div className="text-xs text-muted-foreground">Fresh deals every hour</div>
+                <div className="text-sm font-bold text-success">Updated Regularly</div>
+                <div className="text-xs text-muted-foreground">Fresh deals from top retailers</div>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-3 p-4 bg-primary/10 rounded-xl border border-primary/20">

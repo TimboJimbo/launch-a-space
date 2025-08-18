@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/layout/HeroSection";
 import { CategoryGrid } from "@/components/layout/CategoryGrid";
 import { ProductCard } from "@/components/layout/ProductCard";
 import { Footer } from "@/components/layout/Footer";
+import { FtcDisclosure } from "@/components/layout/FtcDisclosure";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { sampleProducts, featuredProducts } from "@/data/sampleProducts";
@@ -28,9 +29,9 @@ const Index = () => {
               </div>
               <h2 className="text-3xl font-bold">Today's HOTTEST Featured Deals</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                <span className="font-semibold text-foreground">DON'T MISS OUT!</span> Hand-picked deals with 
-                <span className="font-semibold text-success"> the biggest savings</span> and highest commissions. 
-                <span className="font-semibold text-destructive">Limited quantities available!</span>
+                <span className="font-semibold text-foreground">Hand-picked deals</span> with 
+                <span className="font-semibold text-success">verified savings</span> from trusted retailers. 
+                <span className="font-semibold text-destructive">Updated daily with fresh offers!</span>
               </p>
             </div>
             
@@ -76,9 +77,9 @@ const Index = () => {
               </div>
               <h2 className="text-3xl font-bold">Latest FLASH Deals & Steals</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                <span className="font-bold text-destructive">URGENT:</span> Fresh deals added every hour! 
-                <span className="font-semibold text-foreground">Over 200 deals claimed in the last hour.</span>
-                Don't let these limited-time savings slip away!
+                <span className="font-bold text-destructive">NEW:</span> Fresh deals added regularly! 
+                <span className="font-semibold text-foreground">Discover savings from top brands.</span>
+                Don't miss these great offers from trusted retailers!
               </p>
             </div>
             
@@ -104,12 +105,12 @@ const Index = () => {
             <div className="text-center space-y-10 max-w-5xl mx-auto">
               <div className="space-y-4">
                 <Badge variant="secondary" className="px-6 py-2 text-base">
-                  🏆 Trusted by 500,000+ Smart Shoppers
+                  🏆 Trusted Deal Platform Since 2019
                 </Badge>
-                <h2 className="text-4xl font-bold">Why SignUpCodes Saves You MORE Money</h2>
+                <h2 className="text-4xl font-bold">Why Choose SignUpCodes for Your Deals</h2>
                 <p className="text-xl text-muted-foreground">
-                  <span className="font-bold text-success">$2.4M+ saved by our community this month!</span> 
-                  Join the smart shoppers who never pay full price.
+                  <span className="font-bold text-success">Helping shoppers find verified deals</span> from trusted retailers. 
+                  Join our community of smart shoppers.
                 </p>
               </div>
               
@@ -118,13 +119,13 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mx-auto">
                     <TrendingUp className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold">#1 Deal Curation Team</h3>
+                  <h3 className="text-xl font-bold">Expert Deal Curation</h3>
                   <p className="text-muted-foreground">
-                    <span className="font-semibold text-foreground">10+ deal experts</span> work 24/7 to find you 
-                    the highest-value deals. We test every product before recommending it.
+                    <span className="font-semibold text-foreground">Our team</span> carefully selects 
+                    quality deals from reputable retailers and brands.
                   </p>
                   <Badge variant="secondary" className="text-xs">
-                    ✓ Over 1000 deals tested monthly
+                    ✓ Quality deals from trusted sources
                   </Badge>
                 </div>
                 
@@ -134,11 +135,11 @@ const Index = () => {
                   </div>
                   <h3 className="text-xl font-bold">100% Transparent Process</h3>
                   <p className="text-muted-foreground">
-                    <span className="font-semibold text-foreground">Clear affiliate disclosure</span> on every deal. 
-                    We earn small commissions at no cost to you, and pass maximum savings to you.
+                    <span className="font-semibold text-foreground">Full transparency</span> on every deal. 
+                    We may earn commissions at no extra cost to you when you make purchases.
                   </p>
                   <Badge variant="secondary" className="text-xs">
-                    ✓ Honest reviews since 2019
+                    ✓ Transparent affiliate relationships
                   </Badge>
                 </div>
                 
@@ -146,13 +147,13 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-accent to-trust rounded-full flex items-center justify-center mx-auto">
                     <Clock className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold">Real-Time Deal Monitoring</h3>
+                  <h3 className="text-xl font-bold">Regular Deal Updates</h3>
                   <p className="text-muted-foreground">
-                    <span className="font-semibold text-foreground">Updated every 15 minutes!</span> Our price monitoring 
-                    system ensures you get the lowest prices and never miss flash sales.
+                    <span className="font-semibold text-foreground">Regularly updated</span> with new deals 
+                    from various retailers and brands across different categories.
                   </p>
                   <Badge variant="secondary" className="text-xs">
-                    ✓ Price drops tracked instantly
+                    ✓ Fresh deals added regularly
                   </Badge>
                 </div>
               </div>
@@ -160,20 +161,20 @@ const Index = () => {
               {/* Social Proof Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-border/50">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">500K+</div>
-                  <div className="text-sm text-muted-foreground">Happy Customers</div>
+                  <div className="text-3xl font-bold text-primary">2019</div>
+                  <div className="text-sm text-muted-foreground">Since Founded</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-success">$2.4M+</div>
-                  <div className="text-sm text-muted-foreground">Saved This Month</div>
+                  <div className="text-3xl font-bold text-success">100+</div>
+                  <div className="text-sm text-muted-foreground">Partner Retailers</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-accent">4.9★</div>
-                  <div className="text-sm text-muted-foreground">Average Rating</div>
+                  <div className="text-3xl font-bold text-accent">Daily</div>
+                  <div className="text-sm text-muted-foreground">New Deals</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-destructive">24/7</div>
-                  <div className="text-sm text-muted-foreground">Deal Updates</div>
+                  <div className="text-3xl font-bold text-destructive">Free</div>
+                  <div className="text-sm text-muted-foreground">To Use</div>
                 </div>
               </div>
             </div>
@@ -181,6 +182,7 @@ const Index = () => {
         </section>
       </main>
       
+      <FtcDisclosure />
       <Footer />
     </div>
   );

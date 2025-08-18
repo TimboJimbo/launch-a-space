@@ -22,7 +22,7 @@ export const sampleProducts: Product[] = [
     originalPrice: "$249.99",
     rating: 4.8,
     reviews: 24847,
-    deal: "TODAY ONLY: Save $80",
+    deal: "SPECIAL: Save $80",
     affiliate_url: "https://www.amazon.com/dp/B0BDHWDR12?tag=signupcodes-20",
     category: "tech-gadgets",
     isFeatured: true
@@ -35,7 +35,7 @@ export const sampleProducts: Product[] = [
     originalPrice: "$399.99",
     rating: 4.7,
     reviews: 18934,
-    deal: "FLASH DEAL: 35% OFF",
+    deal: "GREAT DEAL: 35% OFF",
     affiliate_url: "https://www.amazon.com/dp/B0C9KYV91Q?tag=signupcodes-20",
     category: "tech-gadgets",
     isFeatured: true
@@ -48,7 +48,7 @@ export const sampleProducts: Product[] = [
     originalPrice: "$399.99",
     rating: 4.9,
     reviews: 31234,
-    deal: "EXCLUSIVE: $100 OFF",
+    deal: "SAVE BIG: $100 OFF",
     affiliate_url: "https://www.amazon.com/dp/B09XJ5B38Q?tag=signupcodes-20",
     category: "tech-gadgets",
     isFeatured: true
@@ -61,7 +61,7 @@ export const sampleProducts: Product[] = [
     originalPrice: "$49.99",
     rating: 4.7,
     reviews: 256789,
-    deal: "PRIME DEAL: 54% OFF",
+    deal: "GREAT DEAL: 54% OFF",
     affiliate_url: "https://www.amazon.com/dp/B09B8V1LZ3?tag=signupcodes-20",
     category: "tech-gadgets"
   },
@@ -73,7 +73,7 @@ export const sampleProducts: Product[] = [
     originalPrice: "$29.99",
     rating: 4.6,
     reviews: 43456,
-    deal: "#1 SELLER: 43% OFF",
+    deal: "BEST SELLER: 43% OFF",
     affiliate_url: "https://www.amazon.com/dp/B0BDHB9Y8W?tag=signupcodes-20",
     category: "tech-gadgets"
   },
@@ -85,7 +85,7 @@ export const sampleProducts: Product[] = [
     originalPrice: "$35.99",
     rating: 4.8,
     reviews: 127892,
-    deal: "LIGHTNING: Save $18",
+    deal: "SAVE NOW: Save $18",
     affiliate_url: "https://www.amazon.com/dp/B019GJLER8?tag=signupcodes-20",
     category: "tech-gadgets"
   },
