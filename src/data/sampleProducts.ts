@@ -23,7 +23,7 @@ export const sampleProducts: Product[] = [
     rating: 4.8,
     reviews: 24847,
     deal: "TODAY ONLY: Save $80",
-    affiliate_url: "https://amzn.to/airpods-pro-2nd",
+    affiliate_url: "https://www.amazon.com/dp/B0BDHWDR12?tag=signupcodes-20",
     category: "tech-gadgets",
     isFeatured: true
   },
@@ -36,7 +36,7 @@ export const sampleProducts: Product[] = [
     rating: 4.7,
     reviews: 18934,
     deal: "FLASH DEAL: 35% OFF",
-    affiliate_url: "https://amzn.to/galaxy-watch-6",
+    affiliate_url: "https://www.amazon.com/dp/B0C9KYV91Q?tag=signupcodes-20",
     category: "tech-gadgets",
     isFeatured: true
   },
@@ -49,7 +49,7 @@ export const sampleProducts: Product[] = [
     rating: 4.9,
     reviews: 31234,
     deal: "EXCLUSIVE: $100 OFF",
-    affiliate_url: "https://amzn.to/sony-wh1000xm5",
+    affiliate_url: "https://www.amazon.com/dp/B09XJ5B38Q?tag=signupcodes-20",
     category: "tech-gadgets",
     isFeatured: true
   },
@@ -62,7 +62,7 @@ export const sampleProducts: Product[] = [
     rating: 4.7,
     reviews: 256789,
     deal: "PRIME DEAL: 54% OFF",
-    affiliate_url: "https://amzn.to/echo-dot-5th",
+    affiliate_url: "https://www.amazon.com/dp/B09B8V1LZ3?tag=signupcodes-20",
     category: "tech-gadgets"
   },
   {
@@ -74,7 +74,7 @@ export const sampleProducts: Product[] = [
     rating: 4.6,
     reviews: 43456,
     deal: "#1 SELLER: 43% OFF",
-    affiliate_url: "https://amzn.to/iphone-15-cable",
+    affiliate_url: "https://www.amazon.com/dp/B0BDHB9Y8W?tag=signupcodes-20",
     category: "tech-gadgets"
   },
   {
@@ -86,7 +86,7 @@ export const sampleProducts: Product[] = [
     rating: 4.8,
     reviews: 127892,
     deal: "LIGHTNING: Save $18",
-    affiliate_url: "https://amzn.to/anker-powercore",
+    affiliate_url: "https://www.amazon.com/dp/B019GJLER8?tag=signupcodes-20",
     category: "tech-gadgets"
   },
 
@@ -100,7 +100,7 @@ export const sampleProducts: Product[] = [
     rating: 4.9,
     reviews: 434567,
     deal: "TOP RATED: Save $40",
-    affiliate_url: "https://amzn.to/instant-pot-duo",
+    affiliate_url: "https://www.amazon.com/dp/B07GBZ4Q68?tag=signupcodes-20",
     category: "home-kitchen",
     isFeatured: true
   },
@@ -113,7 +113,7 @@ export const sampleProducts: Product[] = [
     rating: 4.6,
     reviews: 28934,
     deal: "MEGA SAVE: 56% OFF",
-    affiliate_url: "https://amzn.to/ninja-personal",
+    affiliate_url: "https://www.amazon.com/dp/B091J4NJHF?tag=signupcodes-20",
     category: "home-kitchen"
   },
   {
@@ -125,7 +125,7 @@ export const sampleProducts: Product[] = [
     rating: 4.7,
     reviews: 65623,
     deal: "COFFEE LOVER: 44% OFF",
-    affiliate_url: "https://amzn.to/keurig-mini",
+    affiliate_url: "https://www.amazon.com/dp/B0BQBQZDFX?tag=signupcodes-20",
     category: "home-kitchen"
   },
   {
@@ -137,7 +137,7 @@ export const sampleProducts: Product[] = [
     rating: 4.9,
     reviews: 178901,
     deal: "CHEF'S PICK: Save $15",
-    affiliate_url: "https://amzn.to/lodge-skillet",
+    affiliate_url: "https://www.amazon.com/dp/B00006JSUB?tag=signupcodes-20",
     category: "home-kitchen"
   },
   {
@@ -149,7 +149,7 @@ export const sampleProducts: Product[] = [
     rating: 4.6,
     reviews: 54567,
     deal: "SPRING CLEAN: 50% OFF",
-    affiliate_url: "https://amzn.to/shark-navigator",
+    affiliate_url: "https://www.amazon.com/dp/B0772DSFN9?tag=signupcodes-20",
     category: "home-kitchen"
   },
 
@@ -163,7 +163,7 @@ export const sampleProducts: Product[] = [
     rating: 4.5,
     reviews: 45621,
     deal: "FITNESS GOAL: Save $80",
-    affiliate_url: "https://amzn.to/fitbit-charge5",
+    affiliate_url: "https://www.amazon.com/dp/B0B2TZMQB9?tag=signupcodes-20",
     category: "health-fitness",
     isFeatured: true
   },

@@ -2,8 +2,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, Star } from "lucide-react";
+import { trackAffiliateClick } from "@/lib/affiliate";
 
 interface ProductCardProps {
+  id: string;
   title: string;
   image: string;
   price?: string;
@@ -12,10 +14,12 @@ interface ProductCardProps {
   reviews?: number;
   deal?: string;
   affiliate_url: string;
+  category: string;
   isFeatured?: boolean;
 }
 
 export const ProductCard = ({ 
+  id,
   title, 
   image, 
   price, 
@@ -24,9 +28,14 @@ export const ProductCard = ({
   reviews, 
   deal, 
   affiliate_url,
+  category,
   isFeatured = false 
 }: ProductCardProps) => {
   const hasDiscount = originalPrice && price !== originalPrice;
+  
+  const handleAffiliateClick = () => {
+    trackAffiliateClick(id, title, category);
+  };
   
   return (
     <Card className={`card-hover animate-fade-in group ${isFeatured ? 'md:col-span-2 border-success/20' : ''}`}>
@@ -96,6 +105,7 @@ export const ProductCard = ({
             href={affiliate_url} 
             target="_blank" 
             rel="noopener noreferrer"
+            onClick={handleAffiliateClick}
             className="inline-flex items-center justify-center space-x-2"
           >
             <span>🛒 Get Deal Now</span>
