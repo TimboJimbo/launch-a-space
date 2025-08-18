@@ -168,12 +168,12 @@ const Index = () => {
             <div className="text-center space-y-10 max-w-5xl mx-auto">
               <div className="space-y-4">
                 <Badge variant="secondary" className="px-6 py-2 text-base">
-                  🏆 Trusted Deal Platform Since 2019
+                  🆕 Growing Deal Platform Since 2024
                 </Badge>
                 <h2 className="text-4xl font-bold">Why Choose SignUpCodes for Your Deals</h2>
                 <p className="text-xl text-muted-foreground">
                   <span className="font-bold text-success">Helping shoppers find verified deals</span> from trusted retailers. 
-                  Join our community of smart shoppers.
+                  Join our growing community of smart shoppers.
                 </p>
               </div>
               
@@ -224,16 +224,16 @@ const Index = () => {
               {/* Social Proof Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-border/50">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">2019</div>
-                  <div className="text-sm text-muted-foreground">Since Founded</div>
+                  <div className="text-3xl font-bold text-primary">2024</div>
+                  <div className="text-sm text-muted-foreground">Founded</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-success">100+</div>
-                  <div className="text-sm text-muted-foreground">Partner Retailers</div>
+                  <div className="text-3xl font-bold text-success">500+</div>
+                  <div className="text-sm text-muted-foreground">Products Curated</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-accent">Daily</div>
-                  <div className="text-sm text-muted-foreground">New Deals</div>
+                  <div className="text-3xl font-bold text-accent">Regular</div>
+                  <div className="text-sm text-muted-foreground">Updates</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-destructive">Free</div>

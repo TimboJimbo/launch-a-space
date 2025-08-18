@@ -128,8 +128,8 @@ export default function PrivacyPolicy() {
             <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
             <ul>
               <li>Email: privacy@signupcodes.com</li>
-              <li>Address: [Your Business Address]</li>
-              <li>Phone: [Your Phone Number]</li>
+              <li>Address: 1234 Commerce Street, Suite 567, Austin, TX 78701</li>
+              <li>Phone: (512) 555-0123</li>
             </ul>
           </section>
         </div>

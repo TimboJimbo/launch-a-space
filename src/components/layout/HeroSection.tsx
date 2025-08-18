@@ -22,28 +22,28 @@ export const HeroSection = () => {
               & <span className="text-success">Biggest Savings</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              <strong className="text-primary">Expert-curated deals</strong> with up to <strong className="text-success">80% OFF</strong>. 
-              Discover exclusive offers and sign-up bonuses from trusted retailers.
+              <strong className="text-primary">Hand-picked deals</strong> from trusted Amazon sellers. 
+              Discover genuine savings and quality products without the endless browsing.
             </p>
             
             {/* Social Proof */}
             <div className="flex items-center justify-center space-x-6 text-sm text-muted-foreground">
               <div className="flex items-center space-x-1">
                 <span className="text-yellow-400">★★★★★</span>
-                <span className="font-medium">Trusted by thousands of shoppers</span>
+                <span className="font-medium">Curated for quality</span>
               </div>
               <div className="hidden md:block w-1 h-1 bg-muted-foreground rounded-full"></div>
-              <span className="font-medium">💰 Start saving today</span>
+              <span className="font-medium">💰 Find real savings</span>
             </div>
           </div>
           
           {/* Hero CTAs */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button variant="cta" size="lg" className="text-xl px-12 py-4 h-auto shadow-2xl animate-pulse">
-              💸 Browse Today's Hottest Deals
+            <Button variant="cta" size="lg" className="text-xl px-12 py-4 h-auto shadow-2xl">
+              🛍️ Browse Curated Deals
             </Button>
             <Button variant="trust" size="lg" className="text-lg px-8 py-3 h-auto">
-              🔍 How We Find These Deals
+              🔍 How We Select Deals
             </Button>
           </div>
           
