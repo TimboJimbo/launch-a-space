@@ -25,38 +25,11 @@ export const UrgencyBanner = ({ type, message, className = "" }: UrgencyBannerPr
   return (
     <Badge 
       variant={variants[type]} 
-      className={`flex items-center gap-1 text-xs font-bold animate-pulse ${className}`}
+      className={`flex items-center gap-1 text-xs font-bold ${className}`}
     >
       {icons[type]}
       {message}
     </Badge>
-  );
-};
-
-
-export const LimitedStockIndicator = ({ remainingStock, totalStock }: { remainingStock: number; totalStock: number }) => {
-  const percentage = (remainingStock / totalStock) * 100;
-  const isLow = percentage <= 20;
-  
-  return (
-    <div className="space-y-2">
-      <div className="flex items-center justify-between text-xs">
-        <span className={`font-medium ${isLow ? 'text-destructive' : 'text-muted-foreground'}`}>
-          {isLow ? '🔥 Almost Gone!' : 'In Stock'}
-        </span>
-        <span className="text-muted-foreground">
-          {remainingStock} left
-        </span>
-      </div>
-      <div className="w-full bg-muted rounded-full h-2">
-        <div 
-          className={`h-2 rounded-full transition-all ${
-            isLow ? 'bg-destructive' : 'bg-success'
-          }`}
-          style={{ width: `${percentage}%` }}
-        />
-      </div>
-    </div>
   );
 };
 
@@ -98,7 +71,7 @@ export const PopularityIndicator = ({ viewCount, purchaseCount }: { viewCount: n
   );
 };
 
-// Utility function to generate realistic urgency data
+// Utility function to generate realistic data (no fake scarcity)
 export const generateUrgencyData = (productId: string) => {
   // Use product ID to generate consistent but varied data
   const seed = productId.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
@@ -108,7 +81,5 @@ export const generateUrgencyData = (productId: string) => {
     isPopular: seed % 5 === 0,
     viewCount: 150 + (seed % 500),
     purchaseCount: seed % 2 === 0 ? 5 + (seed % 20) : 0,
-    stockLeft: seed % 10 === 0 ? 3 + (seed % 7) : null,
-    totalStock: 50
   };
 };

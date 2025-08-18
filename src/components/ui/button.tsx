@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary-hover transition-all duration-200",
-        cta: "bg-gradient-to-r from-primary to-orange-500 text-primary-foreground hover:from-primary-hover hover:to-orange-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl font-bold rounded-xl border-0 animate-pulse-cta",
+        cta: "bg-gradient-to-r from-primary to-orange-500 text-primary-foreground hover:from-primary-hover hover:to-orange-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl font-bold rounded-xl border-0",
         success: "bg-success text-success-foreground hover:bg-success/90 shadow-lg hover:shadow-success/25",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-lg",
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors duration-200",

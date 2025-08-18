@@ -21,7 +21,7 @@ export const NewsletterSignup = () => {
     
     toast({
       title: "Thanks for subscribing!",
-      description: "You'll receive exclusive deals and updates in your inbox.",
+      description: "You'll receive deals and updates in your inbox.",
     });
     
     setEmail("");
@@ -40,7 +40,7 @@ export const NewsletterSignup = () => {
             </div>
             <CardTitle className="text-2xl font-bold">Never Miss a Deal!</CardTitle>
             <CardDescription className="text-lg">
-              Get exclusive deals, early access to sales, and insider tips delivered to your inbox.
+              Get the latest deals, curated selections, and helpful shopping tips delivered to your inbox.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -70,7 +70,7 @@ export const NewsletterSignup = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-sm text-muted-foreground">
                 <div className="flex items-center justify-center space-x-2">
                   <span className="text-green-500">✓</span>
-                  <span>Exclusive deals first</span>
+                  <span>Latest deals first</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <span className="text-green-500">✓</span>

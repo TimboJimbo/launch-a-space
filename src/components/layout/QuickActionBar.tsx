@@ -41,7 +41,7 @@ export const QuickActionBar = ({ onQuickFilter, productCount }: QuickActionBarPr
           </div>
 
           <div className="flex items-center space-x-2">
-            <Button variant="cta" size="sm" className="animate-pulse-cta">
+            <Button variant="cta" size="sm">
               🛒 Shop All Deals
             </Button>
           </div>

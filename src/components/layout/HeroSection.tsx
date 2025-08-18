@@ -11,14 +11,14 @@ export const HeroSection = () => {
       <div className="container-custom relative">
         <div className="text-center space-y-8 max-w-5xl mx-auto">
           {/* Urgency Badge */}
-          <Badge variant="destructive" className="text-sm px-6 py-2 bg-gradient-to-r from-destructive to-red-600 animate-pulse font-bold text-base">
-            🔥 NEW: Fresh deals added regularly!
+          <Badge variant="secondary" className="text-sm px-6 py-2 font-bold text-base">
+            ✨ Fresh deals added regularly!
           </Badge>
           
           {/* Hero Headline */}
           <div className="space-y-6">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight animate-fade-in">
-              Find the <span className="text-transparent bg-gradient-to-r from-primary via-orange-500 to-red-500 bg-clip-text animate-pulse-cta">BEST DEALS</span> 
+              Find the <span className="text-transparent bg-gradient-to-r from-primary via-orange-500 to-red-500 bg-clip-text">BEST DEALS</span> 
               & <span className="text-success">Biggest Savings</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -60,10 +60,10 @@ export const HeroSection = () => {
             </Button>
           </div>
           
-          {/* Urgency Counter */}
-          <div className="bg-warning/10 border-2 border-warning/30 rounded-xl p-4 max-w-md mx-auto">
-            <p className="text-warning font-bold text-lg">
-              🎯 Don't miss out on today's featured deals!
+          {/* Notification Bar - Remove false urgency */}
+          <div className="bg-muted/30 border border-border/50 rounded-xl p-4 max-w-md mx-auto">
+            <p className="text-muted-foreground font-medium text-lg">
+              🎯 Browse today's curated deals!
             </p>
           </div>
           

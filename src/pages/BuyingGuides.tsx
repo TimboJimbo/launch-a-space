@@ -34,7 +34,7 @@ export default function BuyingGuides() {
             <div className="text-center mb-12">
               <div className="flex items-center justify-center space-x-2 mb-4">
                 <TrendingUp className="w-6 h-6 text-primary" />
-                <Badge variant="destructive" className="animate-pulse">
+                <Badge variant="secondary" className="">
                   🔥 Most Popular
                 </Badge>
               </div>

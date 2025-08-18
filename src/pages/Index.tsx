@@ -136,9 +136,9 @@ const Index = () => {
               <div className="text-center space-y-4">
                 <div className="flex items-center justify-center space-x-2">
                   <Award className="w-6 h-6 text-primary" />
-                  <Badge variant="destructive" className="text-sm font-bold animate-pulse-cta">
-                    🔥 EDITOR'S CHOICE
-                  </Badge>
+                <Badge variant="secondary" className="text-sm font-bold">
+                  📚 EXPERT GUIDES
+                </Badge>
                 </div>
                 <h2 className="text-3xl font-bold">Today's Featured Deals</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">

@@ -23,8 +23,8 @@
     --success-foreground: 0 0% 100%;
     --success-light: 142 46% 95%;    /* Light green backgrounds */
     
-    /* Urgency & Alerts - Red for limited time */
-    --destructive: 0 84% 60%;        /* Red for urgency/scarcity */
+    /* Alerts & Warnings - Red for important notices */
+    --destructive: 0 84% 60%;        /* Red for warnings/alerts */
     --destructive-foreground: 0 0% 100%;
     --warning: 45 93% 47%;           /* Yellow for warnings */
     --warning-foreground: 0 0% 100%;
