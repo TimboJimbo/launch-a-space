@@ -2,95 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Sign-Up Codes Design System - Conversion-Optimized */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Core Brand Colors - Optimized for Sales Conversion */
+    --background: 215 28% 97%;       /* Soft trust-building background */
+    --foreground: 224 71% 4%;        /* High contrast for readability */
+    
+    --surface: 0 0% 100%;            /* Clean white cards */
+    --border: 214 32% 91%;           /* Subtle borders */
+    
+    /* High-Converting CTAs - Orange for urgency & action */
+    --primary: 24 95% 53%;           /* Vibrant orange for "Buy Now" */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 21 90% 48%;     /* Darker orange on hover */
+    
+    /* Savings & Deals - Green for money psychology */
+    --success: 142 76% 36%;          /* Deep green for savings */
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 46% 95%;    /* Light green backgrounds */
+    
+    /* Urgency & Alerts - Red for limited time */
+    --destructive: 0 84% 60%;        /* Red for urgency/scarcity */
+    --destructive-foreground: 0 0% 100%;
+    --warning: 45 93% 47%;           /* Yellow for warnings */
+    --warning-foreground: 0 0% 100%;
+    
+    /* Trust & Secondary - Blue for reliability */
+    --secondary: 213 27% 84%;        /* Soft blue-grey */
+    --secondary-foreground: 224 71% 4%;
+    --secondary-hover: 214 32% 91%;
+    
+    /* Trust blue for testimonials/badges */
+    --trust: 217 91% 60%;           /* Trust blue */
+    --trust-foreground: 0 0% 100%;
+    --trust-light: 217 91% 95%;     /* Light trust backgrounds */
+    
+    /* Accent for Links & Highlights */
+    --accent: 174 73% 44%;          /* Teal for secondary actions */
+    --accent-foreground: 0 0% 100%;
+    
+    /* Muted Text & Supporting Elements */
+    --muted: 215 27% 92%;
+    --muted-foreground: 215 14% 34%;
+    
+    /* Card & Surface Elements */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 224 71% 4%;
+    
+    /* Popover & Overlays */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 224 71% 4%;
+    
+    /* Form Elements */
+    --input: 214 32% 91%;
+    --ring: 24 95% 53%;
+    
+    /* Conversion-focused gradients */
+    --gradient-cta: linear-gradient(135deg, hsl(var(--primary)), hsl(21 100% 45%));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(142 76% 30%));
+    --gradient-trust: linear-gradient(135deg, hsl(var(--trust)), hsl(217 91% 55%));
+    
+    /* Enhanced shadows for better depth */
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.06);
+    --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.12), 0 4px 10px rgba(0, 0, 0, 0.08);
+    --shadow-cta: 0 4px 14px hsla(24, 95%, 53%, 0.4);
+    --shadow-success: 0 4px 14px hsla(142, 76%, 36%, 0.3);
+    
+    /* Layout */
+    --radius: 0.75rem;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Gradient Combinations for Hero & CTAs */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
+    --gradient-surface: linear-gradient(180deg, hsl(var(--surface)), hsl(var(--background)));
+    
+    /* Shadows for Cards & CTAs */
+    --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.06);
+    --shadow-card-hover: 0 10px 24px rgba(0, 0, 0, 0.10);
+    --shadow-cta: 0 6px 18px hsla(var(--primary), 0.25);
+    
+    /* Transitions */
+    --transition-smooth: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.08s ease;
+    
+    /* Typography */
+    --font-heading: 'system-ui', -apple-system, 'Segoe UI', 'Roboto', 'Inter', Arial, sans-serif;
+    --font-body: 'system-ui', -apple-system, 'Segoe UI', 'Roboto', 'Inter', Arial, sans-serif;
+    
+    /* Layout Constraints */
+    --container-max: 1100px;
+    --container-padding: 1rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    /* Dark mode optimizations for affiliate site */
+    --background: 222 47% 11%;
     --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
+    --surface: 217 32% 18%;
+    --border: 217 32% 18%;
+    
+    --primary: 174 73% 44%;
+    --primary-foreground: 222 47% 11%;
+    --primary-hover: 174 85% 24%;
+    
+    --card: 217 32% 18%;
     --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
+    
+    --muted: 217 32% 18%;
+    --muted-foreground: 215 20% 65%;
+    
+    --accent: 174 73% 44%;
+    --accent-foreground: 222 47% 11%;
+    
+    --secondary: 217 32% 18%;
     --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    --input: 217 32% 18%;
+    --ring: 174 73% 44%;
+    
+    --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.25);
+    --shadow-card-hover: 0 10px 24px rgba(0, 0, 0, 0.35);
   }
 }
 
@@ -100,6 +132,91 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  
+  /* Heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply font-semibold leading-tight;
+  }
+  
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  /* Container for layout consistency */
+  .container-custom {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+  }
+  
+  /* Card hover effects */
+  .card-hover {
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-card);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card-hover);
+  }
+  
+  /* CTA button styles */
+  .btn-cta {
+    @apply inline-flex items-center justify-center rounded-xl px-4 py-2.5 font-bold;
+    @apply bg-primary text-primary-foreground border border-primary;
+    transition: var(--transition-fast);
+    box-shadow: var(--shadow-cta);
+  }
+  
+  .btn-cta:hover {
+    @apply bg-primary-hover;
+    transform: translateY(-1px);
+  }
+  
+  /* Grid layouts for product cards */
+  .product-grid {
+    @apply grid gap-4;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .product-grid-featured {
+    @apply grid gap-4;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .product-grid-featured > :first-child {
+    grid-column: span 2;
+  }
+  
+  @media (max-width: 900px) {
+    .product-grid-featured {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 620px) {
+    .product-grid-featured {
+      grid-template-columns: 1fr;
+    }
+    
+    .product-grid-featured > :first-child {
+      grid-column: auto;
+    }
   }
 }
