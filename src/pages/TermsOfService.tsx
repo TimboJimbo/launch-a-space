@@ -49,7 +49,7 @@ export default function TermsOfService() {
 
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
-            <p>If you have any questions about these Terms of Service, please contact us at legal@signupcodes.com</p>
+            <p>If you have any questions about these Terms of Service, please contact us at legal@signup-code.com</p>
           </section>
         </div>
       </div>

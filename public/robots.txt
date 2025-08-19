@@ -7,7 +7,7 @@ Allow: /terms-of-service
 Allow: /contact
 
 # Sitemap
-Sitemap: https://signupcodes.com/sitemap.xml
+Sitemap: https://signup-code.com/sitemap.xml
 
 # Block unnecessary crawling
 Disallow: /api/

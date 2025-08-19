@@ -39,7 +39,7 @@ export default function DmcaPolicy() {
             <h2 className="text-2xl font-bold mb-4">Designated Copyright Agent</h2>
             <p>Send DMCA notices and counter-notifications to our designated copyright agent:</p>
             <div className="bg-muted p-4 rounded-lg">
-              <p><strong>Email:</strong> dmca@signupcodes.com</p>
+              <p><strong>Email:</strong> dmca@signup-code.com</p>
               <p><strong>Subject Line:</strong> DMCA Notice or DMCA Counter-Notice</p>
             </div>
           </section>

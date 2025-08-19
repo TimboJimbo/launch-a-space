@@ -74,15 +74,15 @@ export default function Contact() {
                 <CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">General Inquiries</h3>
-                    <p className="text-muted-foreground">hello@signupcodes.com</p>
+                    <p className="text-muted-foreground">hello@signup-code.com</p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Partnership Opportunities</h3>
-                    <p className="text-muted-foreground">partnerships@signupcodes.com</p>
+                    <p className="text-muted-foreground">partnerships@signup-code.com</p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Press & Media</h3>
-                    <p className="text-muted-foreground">press@signupcodes.com</p>
+                    <p className="text-muted-foreground">press@signup-code.com</p>
                   </div>
                 </CardContent>
               </Card>
@@ -112,15 +112,15 @@ export default function Contact() {
                 <CardContent className="space-y-2">
                   <div>
                     <h3 className="font-semibold mb-1">DMCA Notices</h3>
-                    <p className="text-sm text-muted-foreground">dmca@signupcodes.com</p>
+                    <p className="text-sm text-muted-foreground">dmca@signup-code.com</p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Privacy Concerns</h3>
-                    <p className="text-sm text-muted-foreground">privacy@signupcodes.com</p>
+                    <p className="text-sm text-muted-foreground">privacy@signup-code.com</p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Legal Issues</h3>
-                    <p className="text-sm text-muted-foreground">legal@signupcodes.com</p>
+                    <p className="text-sm text-muted-foreground">legal@signup-code.com</p>
                   </div>
                 </CardContent>
               </Card>

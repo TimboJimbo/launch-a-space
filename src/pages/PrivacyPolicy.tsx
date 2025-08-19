@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
               <li><strong>Object:</strong> Object to processing based on legitimate interests</li>
               <li><strong>Withdraw Consent:</strong> Withdraw consent for cookie use or marketing communications</li>
             </ul>
-            <p className="mt-2">To exercise these rights, please contact us at privacy@signupcodes.com</p>
+            <p className="mt-2">To exercise these rights, please contact us at privacy@signup-code.com</p>
           </section>
 
           <section className="mb-8">
@@ -127,7 +127,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
             <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
             <ul>
-              <li>Email: privacy@signupcodes.com</li>
+              <li>Email: privacy@signup-code.com</li>
               <li>Address: 1234 Commerce Street, Suite 567, Austin, TX 78701</li>
               <li>Phone: (512) 555-0123</li>
             </ul>
